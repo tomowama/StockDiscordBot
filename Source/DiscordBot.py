@@ -11,19 +11,18 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
-    
+      
     if message.content.startswith('$connor'):
-        await message.channel.send('Hey there connor, I am currently running on a always on replit')
-    
+      await message.channel.send('hello there my BRB')
     if message.content.startswith('$tom'):
-        await message.channel.send('I love tom so so so much')
+      await message.channel.send('hello there my creator')
+
+    if ' tom ' in message.content:
+      await message.channel.send('you called?')
+
+      
     
 
-
-
-
-
-client.run('OTYxNDYyMTk4OTc3MzIzMDYw.Yk5Vcw.But9t4ASGoHX_U7mBv0SV6HDfGY')
+client.run('NULL')
